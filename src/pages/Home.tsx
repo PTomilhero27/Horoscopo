@@ -48,10 +48,34 @@ export function Home() {
     <View style={styles.container}>
 
       <View style={styles.header}>
+        <View style={styles.ballHeader}>
+
+        </View>
+        <View style={[styles.ballHeader, {
+          left: 0,
+          top: 20,
+          borderRadius: 100,
+
+          width: 150,
+          height: 60,
+        }]}>
+
+        </View>
+        <View style={[styles.ballHeader, {
+          left: 220,
+          top: 0,
+          borderRadius: 100,
+
+          width: 150,
+          height: 80,
+        }]}>
+
+        </View>
+
 
         <View style={styles.headerLeft}>
 
-          <TouchableOpacity onPress={() => { 
+          <TouchableOpacity onPress={() => {
             navigation.navigate("Welcome")
           }}>
             <AntDesign
@@ -147,4 +171,15 @@ const styles = StyleSheet.create({
 
     justifyContent: 'space-between',
   },
+  ballHeader: {
+    width: 230,
+    height: 70,
+    left: 80,
+    top: 10,
+    borderTopRightRadius: 100,
+    borderTopLeftRadius: 100,
+    backgroundColor: Color.circle,
+    position: 'absolute',
+    opacity: .5
+  }
 })

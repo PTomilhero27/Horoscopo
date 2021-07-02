@@ -3,9 +3,8 @@ export default {
   green_dark: '#2B7A4B',
 
   header: '#fac8c7',
-  big_circle: '#f3ddfc',
-  small_circle: '#fcefdd',
-  little_circle: '#fcdedd',
+  circle: '#faD9d9',
+
 
   background: '#FFFFFF',
   white: '#FFFFFF',
